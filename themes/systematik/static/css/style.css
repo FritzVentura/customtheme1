@@ -1,8 +1,5 @@
-/* Style SASS SCSS */
+/* Style SASS SCSS til alt styling */
+body {
+  background-color: palegreen; }
 
 /*# sourceMappingURL=style.css.map */
-
-
-body{
-    background-color: palegreen;
-}
