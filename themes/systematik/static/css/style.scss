@@ -1,22 +1,67 @@
 /* Style SASS SCSS til alt styling */
 
+/* FARVER VARIABLES */
+/* ctrl + e åbner en et vindue hvor man kan manipulere farver og gradients */
+
+$basecolor: #98fb98;
+$basecontrastcolor: #333;
+$accentcolor: #3cb7a9;
+$accentcolordark: darken($accentcolor, 20%);
+$accentcolorlight: lighten($accentcolor, 20%);
+$positivecolor: green;
+$negativecolor: red;
+
+
 body {
     font-family: "Lato", sans-serif;
-    background-color: palegreen;
+    background-color: $basecolor;
     font-weight: 400;
     line-height: 1.45;
+    color: $basecontrastcolor;
 }
 
 
-/* Nav */
+/* HEADER */
+
+header{
+    margin-bottom: 10px;
+}
+
+/* TYPOGRAFI */
+
+html {font-size: calc(0.5em + 2vw);}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 5.063em;
+}
+
+h2 {font-size: 3.375em;}
+
+h3 {font-size: 2.25em;}
+
+h4 {font-size: 1.5em;}
+
+small, .font_small {font-size: 0.667em;}
+
+
+/* NAV MOBIL */
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #111;
+    right: 0;
+    background-color: #333333;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -43,37 +88,53 @@ body {
     margin-left: 50px;
 }
 
+.openbtn{
+    position: fixed;
+    right: 10;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
 
+/* Mediaqueries til TABLET - 768px v 16 px font */
 
-/* Typografi */
-
-html {font-size: 1em;}
-
-p {margin-bottom: 1.3em;}
-
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
+@media only screen and (min-width: 48em) {
+    html {
+    font-size: calc(0.80em + 2vw);
+    }
+    .container {
+        width: 88%;
+    }
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 5.063em;
+
+
+/* Mediaqueries til MINDRE COMPUTER - 1024px v 16 px font */
+
+@media only screen and (min-width: 64em) {
+    html {
+    font-size: calc(0.9em + 1.5vw);
+    }
+    .container {
+        width: 88%;
+    }
 }
 
-h2 {font-size: 3.375em;}
 
-h3 {font-size: 2.25em;}
 
-h4 {font-size: 1.5em;}
+/* Mediaqueries til STØRRE COMPUTER - 1200px v 16 px font */
 
-small, .font_small {font-size: 0.667em;}
+@media only screen and (min-width: 75em) {
+    html {
+    font-size: calc(0.5em + 1vw);
+    }
+    .container {
+        width: 88%;
+    }
+}
 
 
 
