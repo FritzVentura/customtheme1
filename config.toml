@@ -20,15 +20,15 @@ theme = "systematik"
     url = "/dokumentation/"
     
 [[menu.main]]
-    name = "Dokumentation"
-    title = "Dokumentation section"
-    weight = 20
-    identifier = "Dokumentation"
-    url = "/dokumentation/"
-    
-[[menu.main]]
     name = "Om"
     title = "Om section"
     weight = 30
     identifier = "om"
     url = "/om/"
+    
+[[menu.main]]
+    name = "Kontakt"
+    title = "Kontakt section"
+    weight = 40
+    identifier = "Kontakt"
+    url = "/kontakt/"

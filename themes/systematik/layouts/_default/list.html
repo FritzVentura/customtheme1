@@ -1,16 +1,29 @@
+
+
 {{ partial "header.html" . }}
    
-    <h1> {{.Title}} </h1>
+<!-- Det her styrer -index html filen --> 
+   <section class="row">
+       <h1 class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Title}} </h1>
+   </section>
     
-    <section> {{.Content}} </section> 
+    <section class="row" > 
+    <div class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg">
+        {{.Content}} 
+    </div>
+    </section> 
     
+    
+<!-- Content på LIST pages --> 
     {{ range .Pages }} 
     
-    <h3> {{.Title}} </h3>
+    <div class="list_cont row">
+        
+        <h3 class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Title}} </h3>
     
-    <div> {{.Content}} </div>
+        <div class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Content}} </div>
     
-
+    </div>
     {{ end }} 
 
 {{ partial "footer.html" . }}

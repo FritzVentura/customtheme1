@@ -2,15 +2,20 @@
     
     
 <head>
+
+<!-- META -->
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<meta name="robots" content="noindex, nofollow">
    
+<!-- CSS SRC -->
 <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css"> 
 
 <link rel="stylesheet" href="{{.Site.BaseURL}}css/flexboxgrid.css">
 
 <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css">
-    
-    
-<script src="{{ .Site.BaseURL }}js/script.js"></script>
     
 </head>
 
@@ -18,8 +23,8 @@
 <body>
 
 <header>
-<!-- Nav fra w3 schools -->
 
+<!-- Nav fra w3 schools -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     {{ $currentPage := . }}
