@@ -42,16 +42,18 @@
 
 <!-- NAV MOBILE -->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9876;</a>
+ <div id="nav_container">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9876;</a>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-    {{ end }}
+    <a class="closebutton sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}" >{{ .Name }}</a>
+    {{ end }}  
+ </div>
 </div>
 
 
 <!-- De tre streger i menuen bliver defineret af en UNICODE -->
-<span class="openbtn" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<span id="nav_open" class="openbtn" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 
 <!-- Hugo NAV Template -->

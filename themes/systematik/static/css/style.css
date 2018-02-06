@@ -45,6 +45,9 @@ small, .font_small {
   display: none; }
 
 /* NAV MOBIL */
+#nav_container {
+  margin-top: 30%; }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -55,15 +58,17 @@ small, .font_small {
   background-color: #333333;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px; }
+  padding-top: 60px;
+  text-align: center; }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 10px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s; }
+  transition: 0.3s;
+  margin-top: 5%; }
 
 .sidenav a:hover {
   color: #f1f1f1; }
@@ -73,13 +78,46 @@ small, .font_small {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  margin-top: 20%; }
 
 .openbtn {
   position: fixed;
   right: 10;
   color: aliceblue; }
 
+.openbtn:hover {
+  color: grey; }
+
+/* NAV MOBIL ANIMATION */
+.sidenav_anim1 {
+  animation-name: nav_anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes nav_anim {
+  0% {
+    width: 0%;
+    opacity: 0; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+.sidenav_anim2 {
+  animation-name: nav_anim2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes nav_anim2 {
+  0% {
+    width: 100%;
+    opacity: 1; }
+  100% {
+    width: 0%;
+    opacity: 0; } }
 @media screen and (min-height: 450px) {
   .sidenav {
     padding-top: 15px; }
