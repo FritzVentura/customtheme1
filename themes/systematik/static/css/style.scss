@@ -60,7 +60,7 @@ small, .font_small {font-size: 0.667em;}
 
 /* NAV MOBIL */
 #nav_container{
-    margin-top: 30%;
+    margin-top: 25%;
 }
 
 .sidenav {
@@ -80,11 +80,11 @@ small, .font_small {font-size: 0.667em;}
 .sidenav a {
     padding: 10px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.8em;
     color: #818181;
     display: block;
     transition: 0.3s;
-    margin-top: 5%;
+    margin: 0% 0% 5% 0%;
 }
 
 .sidenav a:hover {
@@ -95,9 +95,9 @@ small, .font_small {font-size: 0.667em;}
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 50px;
     margin-left: 50px;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .openbtn{
@@ -110,11 +110,30 @@ small, .font_small {font-size: 0.667em;}
     color: grey;
 }
 
+#nav_open{
+    width: 10%;
+    height: 3%;
+}
+
+.bar {
+    width: 100%;
+    height: 20%;
+    margin-top: 15%;
+    background-color: #ffffff;
+    border-radius: 100px;
+    opacity: 1;
+    z-index: 500;
+}
+
+#nav_open:hover .bar{
+    background-color: #4a4a4a;
+}
+
 /* NAV MOBIL ANIMATION */
 
 .sidenav_anim1 {
     animation-name: nav_anim;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -149,12 +168,6 @@ small, .font_small {font-size: 0.667em;}
         opacity: 0;
     }
 }
-
-@media screen and (min-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 
 /* FLYING MEN */
@@ -256,8 +269,9 @@ body{
     background-color: red;
 }
     html {
-    font-size: calc(0.80em + 2vw);
+        font-size: calc(0.80em + 2vw);
     }
+    
     .container {
         width: 88%;
     }
@@ -267,10 +281,39 @@ body{
 .topnav {
     display: none
 }
+ 
     
 /* NAV TABLET MOBILE */
-   
+
+#nav_container{
+    margin-top: 10%;
+}
     
+.sidenav .closebtn {
+    right: 25px;
+    font-size: 2em;
+    margin-left: 50px;
+    margin-top: 5%;
+}
+
+.sidenav a {
+    font-size: 1em;
+    margin-top: 5%;
+}
+    
+#nav_open{
+    width: 5%;
+    height: 3%;
+}
+    
+.bar {
+    width: 100%;
+    height: 20%;
+    margin-top: 12%;
+    z-index: 500;
+}    
+
+
 }
 
 
