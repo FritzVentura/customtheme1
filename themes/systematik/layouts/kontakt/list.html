@@ -28,7 +28,7 @@
 <!-- FORMULAR -->
 <!-- Når den skal publiceres ved hjælp af HUGO PUBLIC skal formular.php filen lægges ind i kontakt mappen som bliver genereret automatisk via kontakt template mappen fra themes--> 
 <div class="container">
-        <div id="formfeedback" class="hidden">Vi vender tilbage snarest!</div>
+        <div id="formfeedback" class=" col-xs-12 center-xs">Vi vender tilbage snarest!</div>
           <form action="" method="post" id="kontaktmig">
 
               <label for="Navn">Navn</label>
@@ -40,18 +40,19 @@
               <label for="henvendelse">Jeg henvender mig vedr.:</label>
               <select id="henvendelse" name="henvendelse">
                 <option value="support">Support</option>
-                <option value="tilbud">Tilbud</option>
-                <option value="prepurchase">Spørgsmål før køb</option>
+                <option value="tilbud">Google Adwords</option>
+                <option value="prepurchase">Web development</option>
               </select>
 
               <label for="besked">Besked</label>
               <textarea id="besked" name="besked" placeholder="Din besked.."></textarea>
-
-              <input type="submit" name="submit" value="Submit">
+              
+              <div class="col-xs-12 center-xs">
+                  <input type="submit" name="submit" value="Send">
+              </div>
               
               <div id="formfailure" class="hidden"></div>
           </form>
-
     </div>
 
 {{ partial "footer.html" . }}

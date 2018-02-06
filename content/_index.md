@@ -5,9 +5,11 @@ draft: true
 caseimage: ../imgs/batmansuperman.jpg
 ---
 
+## Home
+<!--<h1 class="center-xs col-xs-12 center-lg col-lg-12"> Overskrift 1 </h1>-->
 
-<h1 class="center-xs col-xs-12 center-lg col-lg-12"> Overskrift 1 </h1>
-
-
+Hej med dig
 Det her er forsiden
 
+
+[![Lego Batman](../imgs/legobatman.jpg)](../imgs/legobatman.jpg)
