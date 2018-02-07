@@ -24,8 +24,15 @@ header {
 
 header h1 {
   font-size: 2.5em;
-  color: white;
-  opacity: .8; }
+  color: #f7f7f7;
+  opacity: .8;
+  z-index: 0; }
+
+header h2 {
+  font-size: 1.5em;
+  color: #747474;
+  opacity: .8;
+  z-index: 0; }
 
 /* TYPOGRAFI */
 html {
@@ -35,7 +42,7 @@ p {
   margin-bottom: 1.3em; }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 0.5em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2; }
 
@@ -171,6 +178,23 @@ canvas {
   color: #38c738; }
 
 /* SINGLE PAGE CONTENT */
+/* FRONT PAGE CONTENT */
+.small-images img {
+  width: 95%;
+  filter: grayscale(0%); }
+
+.small-imgs {
+  width: 100%; }
+
+.sm-img-container {
+  background-color: #fff;
+  padding: 30px 0 20px 0; }
+
+.small-images img:hover {
+  width: 100%;
+  filter: grayscale(100%);
+  margin-left: -2.5%; }
+
 /* KONTAKTFORMULAR */
 input[type=text],
 input[type=email],
@@ -219,6 +243,12 @@ input[type=submit]:hover {
   padding: 1em; }
 
 /*# sourceMappingURL=style.css.map */
+/* FOOTER */
+footer {
+  background-color: #3c3c3c;
+  width: 100%;
+  height: 30%; }
+
 /* queries til TABLET - 768px v 16 px font */
 @media only screen and (min-width: 48em) {
   body {
@@ -270,7 +300,7 @@ input[type=submit]:hover {
 /* Mediaqueries til ST├ÿRRE COMPUTER - 1200px v 16 px font */
 @media only screen and (min-width: 75em) {
   body {
-    background-color: Grey; }
+    background-color: #838383; }
 
   html {
     font-size: calc(0.5em + 1vw); }
@@ -280,29 +310,30 @@ input[type=submit]:hover {
 
   /* NAV DESKTOP */
   #myTopnav {
-    position: fixed; }
+    position: fixed;
+    z-index: 100; }
 
   .topnav {
     display: inherit;
     overflow: hidden;
     width: 100%;
-    background-color: #333; }
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); }
 
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #242424;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px; }
 
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #7e7e7e;
     color: black; }
 
   .active {
-    background-color: #4CAF50;
+    background-color: #7e7e7e;
     color: white; }
 
   .topnav .icon {
@@ -316,6 +347,12 @@ input[type=submit]:hover {
     display: none; }
 
   .openbtn {
-    display: none; } }
+    display: none; }
+
+  /* FOOTER */
+  footer {
+    background-color: #3c3c3c;
+    width: 100%;
+    height: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

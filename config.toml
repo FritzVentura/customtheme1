@@ -3,8 +3,6 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "systematik" 
 
-[params]
-  featured_image = "/imgs/baggrund1.jpg"
 
 
 [[menu.main]]
@@ -16,21 +14,21 @@ theme = "systematik"
     
     
 [[menu.main]]
-    name = "Dokumentation"
+    name = "Documentation"
     title = "Dokumentation section"
     weight = 20
     identifier = "Dokumentation"
     url = "/dokumentation/"
     
 [[menu.main]]
-    name = "Om"
+    name = "About"
     title = "Om section"
     weight = 30
     identifier = "om"
     url = "/om/"
     
 [[menu.main]]
-    name = "Kontakt"
+    name = "Contact"
     title = "Kontakt section"
     weight = 40
     identifier = "Kontakt"

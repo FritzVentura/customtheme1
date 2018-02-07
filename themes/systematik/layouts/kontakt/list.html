@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
   
 <!-- Det her styrer -index html filen --> 
-   <section class="row">
+   <section class="">
        <h1 class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Title}} </h1>
    </section>
     
-    <section class="row" > 
+    <section class="" > 
     <div class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg">
         {{.Content}} 
     </div>
@@ -15,11 +15,19 @@
 <!-- Content på LIST pages --> 
     {{ range .Pages }} 
     
-    <div class="list_cont row">
+    <div class="list_cont">
         
-        <h3 class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Title}} </h3>
+        <h3 class="xs-colspan-1-12">
+        <a href="{{ .URL }}" class="list_links">
+        {{ .Title }}
+      </a> </h3>
     
-        <div class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Content}} </div>
+        <div class="xs-colspan-1-12">
+         
+         <a href="{{ .URL }}" class="list_links">
+        {{.Content}}
+      </a>
+      </div>
     
     </div>
     {{ end }} 

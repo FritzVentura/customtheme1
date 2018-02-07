@@ -39,8 +39,16 @@ header{
 
 header h1{
     font-size: 2.5em;
-    color: white;
+    color: #f7f7f7;
     opacity: .8;
+    z-index: 0;
+}
+
+header h2{
+    font-size: 1.5em;
+    color: #747474;
+    opacity: .8;
+    z-index: 0;
 }
 
 
@@ -51,7 +59,7 @@ html {font-size: calc(0.5em + 2vw);}
 p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 0.5em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
 }
@@ -220,6 +228,30 @@ canvas {
 
 
 
+/* FRONT PAGE CONTENT */
+
+.small-images img {
+    width: 95%;
+    filter: grayscale(0%);
+}
+
+.small-imgs{
+    width: 100%;
+}
+
+.sm-img-container{
+    background-color: #fff;
+    padding: 30px 0 20px 0;
+}
+
+.small-images img:hover {
+    width: 100%;
+    filter: grayscale(100%);
+    margin-left: -2.5%;
+}
+
+
+
 /* KONTAKTFORMULAR */
 
 input[type=text],
@@ -276,7 +308,13 @@ input[type=submit]:hover {
 
 
 
+/* FOOTER */
 
+footer{
+    background-color: #3c3c3c;
+    width: 100%;
+    height: 30%;
+}
 
 /* queries til TABLET - 768px v 16 px font */
 
@@ -360,7 +398,7 @@ body{
 @media only screen and (min-width: 75em) {
     
 body{
-    background-color: Grey;
+    background-color: #838383;
 }
     html {
     font-size: calc(0.5em + 1vw);
@@ -374,20 +412,20 @@ body{
     
 #myTopnav{
     position: fixed;
-        
+    z-index: 100;
 }
     
 .topnav {
     display: inherit;
-  overflow: hidden;
+    overflow: hidden;
     width: 100%;
-  background-color: #333;
+    background: linear-gradient(to right, rgba(255,255,255,.9), rgba(255,255,255,0));
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #242424;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -395,12 +433,12 @@ body{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #7e7e7e;
   color: black;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #7e7e7e;
   color: white;
 }
 
@@ -421,7 +459,15 @@ body{
 .openbtn{
     display: none;
 }
+    
+    
+/* FOOTER */
 
+footer{
+    background-color: #3c3c3c;
+    width: 100%;
+    height: 30%;
+}
     
 }
 

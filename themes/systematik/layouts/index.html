@@ -2,20 +2,67 @@
 {{ partial "header.html" . }}
 
 
-    <h1>{{.Title}} </h1>
-    
-    <section>
-       
-        {{.Content}} 
-        
-    </section>
-    
-    <div class="row">
-        <img src="{{ .Params.caseimage }}" class="col-xs-12  col-md-12 center-lg">
-    </div>
+<h1 id="title-txt" class="splash-txts xs-rowspan-2-4 xs-colspan-3-12" style="display: none;"> 
+    {{ .Title }} </h1>
 
+   
+<!--
+ <h1 class="col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg"> {{.Title}} </h1>
+-->
+
+<section class="grid-container-12x12"> 
+  
+   <div class="content xs-rowspan-1-2 xs-colspan-3-5">
+   {{.Content}}
+   </div>
+   <div class="small-images small-imgs xs-rowspan-1-2 xs-colspan-9-11" style="margin-top: 10%;">
+        <a href="imgs/img9.jpg"> <img src="{{ .Params.img9 }}"> </a>
+    </div>
+   
+   <div class="sm-img-container grid-container-12x12 xs-rowspan-3-4 xs-colspan-full">
+   
+   <h1 class="xs-rowspan-1-2 xs-colspan-6-9">{{ .Params.description }}</h1>
+   
+    <div class="small-images small-imgs xs-rowspan-3-4 xs-colspan-3-5">
+        <a href="imgs/img1.jpg"> <img src="{{ .Params.img1 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-3-4 xs-colspan-5-7">
+        <a href="imgs/img2.jpg"> <img src="{{ .Params.img2 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-3-4 xs-colspan-7-9">
+        <a href="imgs/img3.jpg"> <img src="{{ .Params.img3 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-3-4 xs-colspan-9-11">
+        <a href="imgs/img4.jpg"> <img src="{{ .Params.img4 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-4-5 xs-colspan-3-5">
+        <a href="imgs/img5.jpg"> <img src="{{ .Params.img5 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-4-5 xs-colspan-5-7">
+        <a href="imgs/img6.jpg"> <img src="{{ .Params.img6 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-4-5 xs-colspan-7-9">
+        <a href="imgs/img7.jpg"> <img src="{{ .Params.img7 }}"> </a>
+    </div>
+    
+    <div class="small-images small-imgs xs-rowspan-4-5 xs-colspan-9-11">
+        <a href="imgs/img8.jpg"> <img src="{{ .Params.img8 }}"> </a>
+    </div>
+    
+   </div>
+
+</section>
+    
+    
+    
    <!-- Jumping Guys --> 
-    <canvas></canvas>
+<!--    <canvas></canvas>-->
     
     
 {{ partial "footer.html" . }}
