@@ -32,6 +32,25 @@ function navUd() {
 }
 
 
+
+// NAV SCROLL
+                     
+$(document).ready(function () {
+    $(window).scroll(function () {
+        
+        
+        if ($(window).scrollTop() > 8) {
+            $('#splash-txt').fadeOut(800);
+        }
+        
+        
+        if ($(window).scrollTop() < 5) {
+            $('#splash-txt').fadeIn(800);
+        }
+        
+    });
+});
+
 /*function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 }

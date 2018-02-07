@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "systematik" 
 
+[params]
+  featured_image = "/imgs/baggrund1.jpg"
+
 
 [[menu.main]]
     name = "Home"

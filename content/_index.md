@@ -2,7 +2,7 @@
 title: "Home"
 date: 2018-02-01T09:01:48+01:00
 draft: true
-caseimage: ../imgs/batmansuperman.jpg
+splashText: Fotoblog Template by Frederik Lee Kofoed
 ---
 
 ## Home
@@ -12,4 +12,4 @@ Hej med dig
 Det her er forsiden
 
 
-[![Lego Batman](../imgs/legobatman.jpg)](../imgs/legobatman.jpg)
+<!--[![Lego Batman](../imgs/legobatman.jpg)](../imgs/legobatman.jpg)-->
